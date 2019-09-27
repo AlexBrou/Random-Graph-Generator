@@ -35,7 +35,10 @@ def randomGraphGenerator(
                 else:
                     edges[newEdge] = None
             nn += 1
-    return list(edges.keys())
+    if weighted:
+        return edges
+    else:
+        return list(edges.keys())
 
 
 if __name__ == "__main__":
