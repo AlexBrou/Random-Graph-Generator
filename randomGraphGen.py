@@ -9,7 +9,7 @@ def randomGraphGenerator(
     weightMax=10,
     oneConnectedComponent=True,
 ):
-    numberOfVertices = 5
+
     assert weightMin <= weightMax
     edges = {}
 
